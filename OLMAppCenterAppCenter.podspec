@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name              = 'AppCenter'
+  s.name              = 'OLMAppCenter'
   s.version           = '3.3.4'
 
   s.summary           = 'Visual Studio App Center is your continuous integration, delivery and learning solution for iOS and macOS apps.'
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   end
 
  s.subspec 'Analytics' do |ss|
-    ss.dependency 'AppCenter/Core'
+    ss.dependency 'OLMAppCenter/Core'
     ss.frameworks = 'Foundation'
     ss.ios.frameworks = 'UIKit'
     ss.osx.frameworks = 'AppKit'
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Crashes' do |ss|
-    ss.dependency 'AppCenter/Core'
+    ss.dependency 'OLMAppCenter/Core'
     ss.frameworks = 'Foundation'
     ss.libraries = 'z', 'c++'
     ss.ios.vendored_frameworks = "AppCenter-SDK-Apple/iOS/AppCenterCrashes.framework"
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   end
 
  s.subspec 'Distribute' do |ss|
-    ss.dependency 'AppCenter/Core'
+    ss.dependency 'OLMAppCenter/Core'
     ss.frameworks = 'Foundation'
     ss.ios.frameworks = 'UIKit'
     ss.ios.weak_frameworks = 'SafariServices'
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
  end
 
  s.subspec 'Push' do |ss|
-    ss.dependency 'AppCenter/Core'
+    ss.dependency 'OLMAppCenter/Core'
     ss.frameworks = 'Foundation'
     ss.ios.frameworks = 'UIKit'
     ss.osx.frameworks = 'AppKit'
